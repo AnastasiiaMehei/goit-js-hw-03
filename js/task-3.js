@@ -1,4 +1,9 @@
-function checkForSpam(message) {
-  let newMessage = message.toLowerCase();
-  return newMessage.includes('spam') || newMessage.includes('sale');
+function filterArray(numbers, value) {
+  let filteredArray = [];
+  for (const number of numbers) {
+    if (number > value) {
+      filteredArray.push(number);
+    }
+  }
+  return filteredArray;
 }

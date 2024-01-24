@@ -1,4 +1,3 @@
 function slugify(title) {
-  const newMessage = title.join('-').toLowerCase();
-  return newMessage;
+  return title.split(' ').join('-').toLowerCase();
 }
